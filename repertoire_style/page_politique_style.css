@@ -1,0 +1,18 @@
+p[name="debut"]{ /* Le texte du début est au milieu, on le place donc au milieu*/
+    text-align: center;
+}
+
+p { /* Le reste se trouve sur la gauche */
+    text-align: justify;
+}
+
+div[name="page"]{ /* On augmente la taille de la page, et on change les margin pour que le texte se situe au milieu*/
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+
+span{ /* On change la couleur de l'avertissement*/
+    color: #e66771;
+}

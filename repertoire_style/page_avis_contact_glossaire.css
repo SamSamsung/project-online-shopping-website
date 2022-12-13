@@ -1,0 +1,168 @@
+/* CSS de la page contact*/
+
+#boite.boite_contact{ /* On modifie la taille de la boite des contacts*/
+	width: 37%;
+	right: 15%;
+}
+
+#boite .tel{ /* On creer la boite qui contient les informations des téléphones*/
+	background-color: lightblue;
+	height: 150px;
+	border-radius: 10px;
+}
+
+#boite .txt { /* On change les propriétés du texte (mails et numéros)*/
+	float: right;
+	width: 97%;
+	margin: 6px;
+	height: 140px;
+}
+
+.txt p, .txt h2{ /* On change les propriétés de individuellement, le texte.*/
+	text-align: center;
+	margin-top: -2.5px;
+	
+}
+
+#boite .mail{ /* On creer la boite qui contient les informations des mails*/
+	background-color: lightblue;
+	margin-top: 2.5%;
+	height: 150px;
+	border-radius: 10px;
+}
+
+.fa-phone-flip, .fa-envelope{ /* On change les propriétés des icones*/
+	height: 90px;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+
+/* CSS de la page Avis*/
+
+#boite.boite_questionnaire{ /* On change les propriétés de l'ID boite qui a aussi une classe boite_questionnaire*/
+	height:660px;
+	width: 70%;
+	margin-left: 15%
+}
+
+#pop_up h1{ /* On change le titre de la pop_up pour qu'il ne soit pas infulencé par le theme obscur et on change l'espace et la taille*/
+	color: black; 
+	font-size: 30px; 
+	padding: 20px; 
+
+
+}
+
+
+.tableau { /* On creer le tableau*/
+    position: relative;
+	font-size: 25px;
+	color: black;
+    margin-top: -370px;
+    right: -75%;
+	height: 250px;
+
+}
+
+
+#avis_txt { /* On creer des propriétés de l'emplacer du texte a remplir*/
+	position: relative;
+	margin-top: 60px;
+	border-radius: 10px;
+	font-size: 20px;
+	width: 885px;
+	height: 160px;
+	resize: none; /* On empeche l'utilisateur de pouvoir faire bouger l'emplacement de texte*/
+	
+}
+
+input[type=checkbox] { /* On creer les propriétés des cases a caucher*/
+	height: 30px;
+	width: 30px;
+	margin: 10px;
+	margin-right: 30px;
+	margin-left: 30px;
+	
+}
+
+.envoyer{ /* On creer les propriétés du bouton*/
+	position: relative;
+	border-radius: 20px;
+	top: 30px;
+	height: 50px;
+	width: 100px;
+	background-color: lightblue;
+
+}
+
+.pop_up { /* On creer les proptiétés du pop_up mais sans le rendre visible*/
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	transition: 200ms ease-in-out;
+	border: 1px solid black;
+	border-radius: 10px;
+	z-index: 12;
+	background-color: white;
+
+}
+
+.pop_up.active { /* On fait apparaitre le pop up s'il contient la classe active*/
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.bouton_ferme { /*  On enleve l'arrière plan */
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 1.25rem;
+	font-weight: bold;
+	position: relative;
+	float: right;
+}
+
+
+.question_6 { /* On change la taille de la classe question_6*/
+	height: 282.5px;
+}
+
+#notactive{ /* On bouge le texte qui demande a l'utilisateur d'écrire avant d'envoyer et on met la couleur transparente*/
+	position: relative; 
+	color: transparent; 
+	left: 300px; 
+	top: -100px;
+}
+
+#boite h1 { /* On change la couleur des titres de la boite pour qu'elle ne soit pas modifié avec le theme obscur*/
+	color: black;
+}
+
+
+
+#boite .liste_questionnaire li{ /* On change l'espace entre chaque liste numéroté et leur taille*/
+	margin-bottom: 35px;
+	font-size: 20px;
+}
+
+tr{ /* On change l'espace entre chaque case*/
+	margin: 30px;
+}
+
+
+/* CSS de la page glossaire*/
+
+ol[name="definitions"] li{ /* On change la taille des listes numérotés et son espace*/
+	margin: 20px;
+	font-size: 18px;
+}
+
+#boite.boite_glossaire{ /* On change la taille de la boite du glossaire*/
+	width: 40%;
+	right: 15%;
+}
+
+

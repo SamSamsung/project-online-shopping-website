@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./imports/head.js"></script> <!-- On importe ce document javascript ou tout les imports ont déja été faits-->
+        <link rel="stylesheet" href="../repertoire_style/page_objets.css"> <!-- On importe ce document car il représente le style des pages objets-->
+    </head>
+    <body>
+        <script src="imports/banner_pop_up.js"></script> <!-- On importe le ficher banner...js pour avoir la bannière et le pop_up d'AFK -->
+        <div class="container" id="id_container" style="height: 1574px;">
+            <h1 name="titre_objet">Sport</h1>
+            <div class="objet">		<!-- On crée une classe où l'on y met l'objet-->
+                <img class="image" src="../repertoire_img/images_objets/Sport/sport1.jpeg" alt="raquette">
+		<!-- On appelle la classe texte avec un numéro pour différencier les voir plus. On place la classe petits_points qu'on fait disparaître 
+		avec l'appui du bouton voir plus et on appelle la fonction voir plus qui montre le surplus de texte.-->
+                <p class="text0">Raquette de Tennis Heads avec bandage et anti-<span class="petits_points">...</span><span class="plus_text">vibrateur </span> <a onclick="voir_plus(0)" class="voir_plus0">Voir plus</a></p> 
+                <h2>169.99 €</h2>	<!-- On affiche le prix de l'objet.-->
+                <p name="livraison">Livraison en moins de <span>2 jours</span></p>	<!-- On change la couleur du span.-->
+            </div>
+            <div class="objet">		<!-- On crée une classe où l'on y met l'objet-->
+                <img class="image" src="../repertoire_img/images_objets/Sport/sport2.jpeg" alt="club_golf">
+		<!-- On appelle la classe texte avec un numéro pour différencier les voir plus. On place la classe petits_points qu'on fait disparaître 
+		avec l'appui du bouton voir plus et on appelle la fonction voir plus qui montre le surplus de texte.-->
+                <p>Club de Golf</p>
+                <h2>39.99 €</h2>	<!-- On affiche le prix de l'objet.-->
+                <p name="livraison">Livraison en moins de <span>1 jour</span></p>	<!-- On change la couleur du span.-->
+            </div>
+            <div class="objet">		<!-- On crée une classe où l'on y met l'objet-->
+                <img class="image" src="../repertoire_img/images_objets/Sport/sport3.jpeg" alt="gourde">
+		<!-- On appelle la classe texte avec un numéro pour différencier les voir plus. On place la classe petits_points qu'on fait disparaître 
+		avec l'appui du bouton voir plus et on appelle la fonction voir plus qui montre le surplus de texte.-->
+                <p class="text1">Gourde de sport avec bouchon en metal et contour<span class="petits_points">...</span> <span class="plus_text">en bois </span> <a onclick="voir_plus(1)" class="voir_plus1">Voir plus</a></p> 
+                <h2>19.99 €</h2>	<!-- On affiche le prix de l'objet.-->
+                <p name="livraison">Livraison en moins de <span>3 jours</span></p>	<!-- On change la couleur du span.-->
+            </div>
+            <div class="objet">		<!-- On crée une classe où l'on y met l'objet-->
+                <img class="image" src="../repertoire_img/images_objets/Sport/sport4.jpeg" alt="kayak">
+		<!-- On appelle la classe texte avec un numéro pour différencier les voir plus. On place la classe petits_points qu'on fait disparaître 
+		avec l'appui du bouton voir plus et on appelle la fonction voir plus qui montre le surplus de texte.-->
+                <p class="text2">2 Kayaks de randon&eacute;e avec pelles<span class="petits_points">...</span> <span class="plus_text">int&eacute;gr&eacute;es </span> <a onclick="voir_plus(2)" class="voir_plus2">Voir plus</a></p> 
+                <h2>299.99 €</h2>	<!-- On affiche le prix de l'objet.-->
+                <p name="livraison">Livraison en moins de <span>1 jour</span></p>	<!-- On change la couleur du span.-->
+            </div>
+            <div class="objet">		<!-- On crée une classe où l'on y met l'objet-->
+                <img class="image" src="../repertoire_img/images_objets/Sport/sport5.jpeg" alt="sac">
+		<!-- On appelle la classe texte avec un numéro pour différencier les voir plus. On place la classe petits_points qu'on fait disparaître 
+		avec l'appui du bouton voir plus et on appelle la fonction voir plus qui montre le surplus de texte.-->
+                <p class="text3">Sac a dos de sport ou de randon&eacute;e avec 2L d'es<span class="petits_points">...</span><span class="plus_text">pace pour une gourde </span> <a onclick="voir_plus(3)" class="voir_plus3">Voir plus</a></p> 
+                <h2>39.99 €</h2>	<!-- On affiche le prix de l'objet.-->
+                <p name="livraison">Livraison en moins de <span>2 jours</span></p>	<!-- On change la couleur du span.-->
+            </div>
+            <div class="objet">		<!-- On crée une classe où l'on y met l'objet-->
+                <img class="image" src="../repertoire_img/images_objets/Sport/sport6.jpeg" alt="poids">
+		<!-- On appelle la classe texte avec un numéro pour différencier les voir plus. On place la classe petits_points qu'on fait disparaître 
+		avec l'appui du bouton voir plus et on appelle la fonction voir plus qui montre le surplus de texte.-->
+                <p class="text4">Poids a soulever 5/10/20Kg (vient en paquer<span class="petits_points">...</span> <span class="plus_text">de trois)   </span> <a onclick="voir_plus(4)" class="voir_plus4">Voir plus</a></p> 
+                <h2>59.99 €</h2>	<!-- On affiche le prix de l'objet.-->
+                <p name="livraison">Livraison en moins de <span>1 jour</span></p>	<!-- On change la couleur du span.-->
+            </div>
+            <div class="objet">		<!-- On crée une classe où l'on y met l'objet-->
+                <img class="image" src="../repertoire_img/images_objets/Sport/sport7.jpeg" alt="balon">
+		<!-- On appelle la classe texte avec un numéro pour différencier les voir plus. On place la classe petits_points qu'on fait disparaître 
+		avec l'appui du bouton voir plus et on appelle la fonction voir plus qui montre le surplus de texte.-->
+                <p>Balon de Basket-ball</p> 
+                <h2>19.99 €</h2>	<!-- On affiche le prix de l'objet.-->
+                <p name="livraison">Livraison en moins de <span>12 heures</span></p>	<!-- On change la couleur du span.-->
+            </div>
+            <div class="objet">		<!-- On crée une classe où l'on y met l'objet-->
+                <img class="image" src="../repertoire_img/images_objets/Sport/sport8.jpeg" alt="gant">
+		<!-- On appelle la classe texte avec un numéro pour différencier les voir plus. On place la classe petits_points qu'on fait disparaître 
+		avec l'appui du bouton voir plus et on appelle la fonction voir plus qui montre le surplus de texte.-->
+                <p class="text5">Gant de Base-ball avec balle int<span class="petits_points">...</span><span class="plus_text">&eacute;gr&eacute;e </span> <a onclick="voir_plus(5)" class="voir_plus5">Voir plus</a></p> 
+                <h2>29.99 €</h2>	<!-- On affiche le prix de l'objet.-->
+                <p name="livraison">Livraison en moins de <span>8 heures</span></p>	<!-- On change la couleur du span.-->
+            </div>
+        </div>
+        
+        <div class="informations">
+            <script src="imports/informations.js"></script>  <!-- On importe le dossier informations.js pour avoir le footer -->
+        </div>
+    </body>
+</html>

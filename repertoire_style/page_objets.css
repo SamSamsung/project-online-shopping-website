@@ -1,0 +1,66 @@
+.container .objet p{ /* On change les propriétés des paragraphes inclus dans certaines classes et ID*/
+	text-align: center;
+	font-size: 20px;
+	margin-left: 30px;
+	margin-right: 30px;	
+}
+
+.container .objet { /* On change les propriétés de l'ID objet mais seulement s'il est présent dans la classe container*/
+	margin: 40px;
+	height: 600px;
+	width: 19%;
+	float: left;
+	background-color: white;
+	border-radius: 20px;
+}
+
+.objet .image { /* On change les propriétés de l'ID image mais seulement s'il est présent dans l'ID objet*/
+	display: block;
+	height: 325px;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+    transition: 1s;
+	
+}
+
+#id_container { /* On augmente la taille des containers qui sont normalement plus bas*/
+	height: 1574px;
+
+}
+
+
+.plus_text, .montrer_plus .petits_points { /* On cache le surplus de texte et les trois petits points, lorsque la classe montrer plus sera active*/
+	display: none;
+}
+
+.montrer_plus .plus_text { /* On montre le surplus de texte lorsque la classe "montrer plus" sera activé*/
+	display: inline;
+}
+
+.objet .image:hover { /* On change les propriétés de l'ID image seulement présent dans l'ID objet pour que lorsque qu'on passe la souris dessus, */
+    transform: scale(2); /* On le rend deux fois plus grand*/
+    z-index: 11; /* Et l'on fait en sote qu'il passe pardessus les objets*/
+}
+
+.objet a{ /* On change la couleur des textes hyperliens */
+	color: lightblue; 
+	
+}
+
+
+p[name="livraison"] { /* On change la taille et la couleur des paracgraphes appartenant au nom livraison*/
+	font-size: 10px;
+	color: #7FFFD4;
+}
+
+p[name="livraison"] span{ /* On change la couleur et le soulignement des spans appartenant aux paragraphes avec le nom livraison */
+	color: red;
+	text-decoration: underline;
+}
+
+h1[name="titre_objet"] { /* On change la couleur des titres, leurs espaces et leur taille*/
+    font-size: 50px;
+    color: white;
+    padding: 10px;
+}

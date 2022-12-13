@@ -1,0 +1,18 @@
+.container.dark-theme .objet, .dark-theme .box, .dark-theme .bouton, .dark-theme .search-box { /* On change les propriétés des classes en couleur grise claire*/
+    background-color: #C0C0C0;
+	
+}
+
+.dark-theme, #boite.dark-theme  { /* On change les propriétés des classes en couleur grise */
+    background-color: gray;
+}
+
+body.dark-theme{ /* On change les propriétés du body avec un arrière plan noir et un texte blanc*/
+    background-color: black;
+    color : white
+}
+
+.dark-theme .panier, .dark-theme .compte, .dark-theme .search-btn { /* On change les propriétés des classes en couleur grise claire*/
+    color : black; 
+}
+

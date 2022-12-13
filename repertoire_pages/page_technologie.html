@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./imports/head.js"></script> <!-- On importe ce document javascript ou tout les imports ont déja été faits-->
+        <link rel="stylesheet" href="../repertoire_style/page_objets.css"> <!-- On importe ce document car il représente le style des pages objets-->
+    </head>
+    <body>
+        <script src="imports/banner_pop_up.js"></script> <!-- On importe le ficher banner...js pour avoir la bannière et le pop_up d'AFK -->
+        <div class="container" id="id_container" style="height: 1574px;">
+            <h1 name="titre_objet">Technologie</h1>
+            <div class="objet">		<!-- On crée une classe où l'on y met l'objet-->
+                <img class="image" src="../repertoire_img/images_objets/Technologie/technologie1.jpeg" alt="drone">
+		<!-- On appelle la classe texte avec un numéro pour différencier les voir plus. On place la classe petits_points qu'on fait disparaître 
+		avec l'appui du bouton voir plus et on appelle la fonction voir plus qui montre le surplus de texte.-->
+                <p class="text0">Drone avec cam&eacute;ra 4K et 4 h&eacute;lices et st<span class="petits_points">...</span><span class="plus_text">abilisateur</span> <a onclick="voir_plus(0)" class="voir_plus0">Voir plus</a></p>
+                <h2>1269.99 €</h2>	<!-- On affiche le prix de l'objet.-->
+                <p name="livraison">Livraison en moins de <span>10 heures</span></p>	<!-- On change la couleur du span.-->
+            </div>
+            <div class="objet">		<!-- On crée une classe où l'on y met l'objet-->
+                <img class="image" src="../repertoire_img/images_objets/Technologie/technologie2.jpeg" alt="montre">
+		<!-- On appelle la classe texte avec un numéro pour différencier les voir plus. On place la classe petits_points qu'on fait disparaître 
+		avec l'appui du bouton voir plus et on appelle la fonction voir plus qui montre le surplus de texte.-->
+                <p class="text1">Apple Watch avec 22h d'autonomie et Air p<span class="petits_points">...</span><span class="plus_text">ods inclus</span> <a onclick="voir_plus(1)" class="voir_plus1">Voir plus</a></p>
+                <h2>579.99 €</h2>	<!-- On affiche le prix de l'objet.-->
+                <p name="livraison">Livraison en moins de <span>20 heures</span></p>	<!-- On change la couleur du span.-->
+            </div>
+            <div class="objet">		<!-- On crée une classe où l'on y met l'objet-->
+                <img class="image" src="../repertoire_img/images_objets/Technologie/technologie3.jpeg" alt="camera">
+		<!-- On appelle la classe texte avec un numéro pour différencier les voir plus. On place la classe petits_points qu'on fait disparaître 
+		avec l'appui du bouton voir plus et on appelle la fonction voir plus qui montre le surplus de texte.-->
+                <p class="text2">Appareil photo hybride Sony 4K av<span class="petits_points">...</span><span class="plus_text">ec Flash</span> <a onclick="voir_plus(2)" class="voir_plus2">Voir plus</a></p>
+                <h2>339.99 €</h2>	<!-- On affiche le prix de l'objet.-->
+                <p name="livraison">Livraison en moins de <span>2 jours</span></p>	<!-- On change la couleur du span.-->
+            </div>
+            <div class="objet">		<!-- On crée une classe où l'on y met l'objet-->
+                <img class="image" src="../repertoire_img/images_objets/Technologie/technologie4.jpeg" alt="ordi_portable">
+		<!-- On appelle la classe texte avec un numéro pour différencier les voir plus. On place la classe petits_points qu'on fait disparaître 
+		avec l'appui du bouton voir plus et on appelle la fonction voir plus qui montre le surplus de texte.-->
+                <p class="text3">Ordinateur portable Asus avec Linux d&eacute;ja i<span class="petits_points">...</span><span class="plus_text">nstall&eacute;</span> <a onclick="voir_plus(3)" class="voir_plus3">Voir plus</a></p>
+                <h2>199.99 €</h2>	<!-- On affiche le prix de l'objet.-->
+                <p name="livraison">Livraison en moins de <span>1 jour</span></p>	<!-- On change la couleur du span.-->
+            </div>
+            <div class="objet">		<!-- On crée une classe où l'on y met l'objet-->
+                <img class="image" src="../repertoire_img/images_objets/Technologie/technologie5.jpeg" alt="tel">
+		<!-- On appelle la classe texte avec un numéro pour différencier les voir plus. On place la classe petits_points qu'on fait disparaître 
+		avec l'appui du bouton voir plus et on appelle la fonction voir plus qui montre le surplus de texte.-->
+                <p class="text4">Iphone X avec chargeur et Air pods<span class="petits_points">...</span> <span class="plus_text">int&eacute;gr&eacute;s</span> <a onclick="voir_plus(4)" class="voir_plus4">Voir plus</a></p>
+                <h2>619.99 €</h2>	<!-- On affiche le prix de l'objet.-->
+                <p name="livraison">Livraison en moins de <span>2 jours</span></p>	<!-- On change la couleur du span.-->
+            </div>
+            <div class="objet">		<!-- On crée une classe où l'on y met l'objet-->
+                <img class="image" src="../repertoire_img/images_objets/Technologie/technologie6.jpeg" alt="ordi">
+		<!-- On appelle la classe texte avec un numéro pour différencier les voir plus. On place la classe petits_points qu'on fait disparaître 
+		avec l'appui du bouton voir plus et on appelle la fonction voir plus qui montre le surplus de texte.-->
+                <p class="text5">Ecran 4K avec clavier et tapis de souris blue<span class="petits_points">...</span><span class="plus_text">tooth int&eacute;gr&eacute;</span> <a onclick="voir_plus(5)" class="voir_plus5">Voir plus</a></p>
+                <h2>699.99 €</h2>	<!-- On affiche le prix de l'objet.-->
+                <p name="livraison">Livraison en moins de <span>7 heures</span></p>	<!-- On change la couleur du span.-->
+            </div>
+            <div class="objet">		<!-- On crée une classe où l'on y met l'objet-->
+                <img class="image" src="../repertoire_img/images_objets/Technologie/technologie7.jpeg" alt="casque">
+		<!-- On appelle la classe texte avec un numéro pour différencier les voir plus. On place la classe petits_points qu'on fait disparaître 
+		avec l'appui du bouton voir plus et on appelle la fonction voir plus qui montre le surplus de texte.-->
+                <p class="text6">Casque Sony avec reducteur de son et oreil<span class="petits_points">...</span><span class="plus_text">ettes en coton </span> <a onclick="voir_plus(6)" class="voir_plus6">Voir plus</a></p>
+                <h2>59.99 €</h2>	<!-- On affiche le prix de l'objet.-->
+                <p name="livraison">Livraison en moins de <span>2 jours</span></p>	<!-- On change la couleur du span.-->
+            </div>
+            <div class="objet">		<!-- On crée une classe où l'on y met l'objet-->
+                <img class="image" src="../repertoire_img/images_objets/Technologie/technologie8.jpeg" alt="enceintes">
+		<!-- On appelle la classe texte avec un numéro pour différencier les voir plus. On place la classe petits_points qu'on fait disparaître 
+		avec l'appui du bouton voir plus et on appelle la fonction voir plus qui montre le surplus de texte.-->
+                <p class="text7">2 enceintes st&eacute;r&eacute;os de Stein avec amplifica<span class="petits_points">...</span><span class="plus_text">teur de son</span> <a onclick="voir_plus(7)" class="voir_plus7">Voir plus</a></p>
+                <h2>109.99 €</h2>	<!-- On affiche le prix de l'objet.-->
+                <p name="livraison">Livraison en moins de <span>4 heures</span></p>	<!-- On change la couleur du span.-->
+            </div>
+
+        </div>
+        
+        <div class="informations">
+            <script src="imports/informations.js"></script> <!-- On importe le dossier informations.js pour avoir le footer -->
+        </div>
+    </body>
+</html>

@@ -1,0 +1,414 @@
+/* Exemple de fichier css /*
+/* Au passage : un commentaire en css s ecrit entre /* et */
+
+
+
+html{		/* On change les propriétés de la page pour que le zoom soit à 90% et non à 100% */
+	zoom: 90%;
+
+}
+
+body{
+	background-color: lightgray; /* Le fond de la page sera gris */
+    color: black; /* Le texte de la page sera blanc */
+	font-family: sans-serif;
+	max-height: 900px;
+}
+
+#pop_up_ecran, #pop_up_cookie {		/* On définit l'emplacement du pop-up pour les cookies */
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);	/* On met scale = 0 pour qu'il ne soit pas visible */
+	border: 1px solid black;
+	border-radius: 10px;
+	z-index: 12;
+	background-color: hsl(0, 0%, 90%)
+}
+
+img[name="cookie_img"]{		/* On fait apparaître une image de cookie importée d'un autre fichier */
+	height: 50px;
+	margin-top: 20px;
+	margin-left: 45%;
+	
+}
+
+
+#overlay {				/* On définit un arrière-plan qui s'affiche lorsque le pop-up apparaît */
+	position: fixed;		/* On le d'abord en non-visible */
+	opacity: 0;
+	z-index: 11;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: 200ms ease-in-out;
+	background: rgba(0, 0, 0, .5);
+	pointer-events: none;
+
+}
+
+#pop_up_cookie #lien_cookie {		/* On définit l'emplacement d'un lien qui renvoie sur la politique de confidentialité du site */
+	position: relative;
+	top: 11px;
+	left: 250px;
+	font-size: 13px;
+}
+
+#pop_up_ecran #bouton_ferme, #pop_up_cookie #bouton_cookie{		/* On définit l'emplacement du bouton pour accepter les cookies */
+	float: right;
+	border-radius: 20px;
+	background-color: orange;
+	margin: 10px;
+}
+
+
+
+
+#pop_up_ecran.active, #pop_up_cookie.active {			/* On rend e visible le pop-up */
+	transform: translate(-50%,-50%) scale(2);
+	color: black; /* On met la couleur en noir pour éviter qu'elle soit changée avec le dark_theme*/
+}
+
+#gif{
+	position: fixed;
+	opacity: 0;		/* On le rend invisible */
+	z-index: 11;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: 200ms ease-in-out;
+	background: url("../repertoire_img/ecran-veille.gif");		/* On importe l'ecran-veille.gif */
+	pointer-events: none;
+}
+
+#gif.active, #overlay.active{		
+	opacity: 1;			/* On les fait apparaître */
+	pointer-events: all;		/* On empêche l'utilisateur de cliquer sur la page derrière */
+}
+
+
+.deffilement_img{		/* On définit la vitesse du défilement des images */
+	width: 1750px;
+}
+
+.deffilement_img img{		/* On regroupe toutes les images, on définit l'animation (son temps et sa position) */
+	position: relative;
+	animation: animate 20s linear infinite; /* On définit Animate plus bas, on dit que ça dois prendre 20s pour tout faire, que ça doit rester en ligne et que ça se fait indéfinniment*/
+	height: 291px;
+	border: solid;		/* On définit une bordure */
+
+
+	
+	
+}
+
+.banner{			/* On définit le style de la bannière */
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 0;
+	height: 100px;
+	z-index: 1;
+	background-color: lightskyblue;
+}
+
+.titre_princ{			/* On définit le style du titre principal */
+	position: absolute;
+	top: 15%;
+	left: 7.5%;
+	color: black;
+	margin-left: 40px;
+	height: 55px;
+	width: 20%;
+}
+
+.panier{			/* On définit l'emplacement de l'ensemble de l'icône panier */
+	color: red;
+	position: relative;
+	left: 80%;
+	top: 30px;
+	width: 2%;
+	height: 55px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fa-basket-shopping, .fa-user{		/* On définit la taille des icônes */
+	height: 70%;
+}
+
+
+
+.compte{				 /* On définit l'emplacement de l'ensemble de l'icône compte */
+	color: red;
+	position: relative;
+	left: 85%;
+	top: -25px;
+	width: 2%;
+	height: 55px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.bouton{				/* On définit le style du bouton qui permet de passer en thème obscurci */
+	position: relative;
+	bottom: 90px;
+	right: 1%;
+	float: right;
+	width: 8%;
+	height: 65px;
+	background: white;
+	border-radius: 50px
+}
+
+.search-txt{				/* On définit l'emplacement de la partie texte de la barre de recherche */
+	width: 700px;
+	height: 40px;
+	position: relative;
+}
+
+.search-box{				/* On définit l'emplacement de la barre de recherche */
+	position: absolute;
+	top: 45%;
+	left: 55%;
+	transform: translate(-50%,-50%);
+	background: blue;
+	height: 60px;
+	border-radius: 40px;
+	margin: 10px auto;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.search-btn{				/* On définit le style de l'icône recherche */
+	cursor: pointer;
+	color: red;
+	float: right;
+	width: 1%;
+	height: 40px;
+	border-radius: 50%;
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo{					/* On définit le style du logo */
+	position: absolute;
+	top: -3%;
+	left: 0.5%;
+	height: 110px;
+	background-color: transparent;
+}
+
+
+.container{				/* On définit le style du conteneur */
+	position: relative;
+	top: 170px;
+	width : 90%;
+	height: 860px;
+	left: 4%;
+	background-color: blue;
+    	border-radius: 50px;
+}
+
+.box{					/* On définit le style des boites contenant chaque catégorie de produit */
+	position: relative;
+	width: 32%;
+	height: 370px;
+	background-color: whitesmoke;
+	float: left;
+	margin: 10px;
+	margin-top: 35px;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 50px;
+	max-width: 80%;
+	max-height: 80%;
+	
+}
+
+.informations{				/* On définit le style du bas de page */
+	position: relative;
+	top: 250px;
+	right: 1%;
+	width: 110%;
+	height: 306px;
+	background-color: darkblue;
+}
+
+.colonne_a_propos{			/* On déifinit le style de la colonne A propos */
+	position: absolute;
+	height: 270px;
+	width: 10%;
+	left: 30%;
+	padding: 10px 100px 10px;
+}
+
+
+.colonne_produits{			/* On définit le style de la colonne des produits */
+	position: absolute;
+	height: 270px;
+	width: 10%;
+	left: 50%;
+	padding: 10px 100px 10px;
+	margin: 15px;
+}
+
+
+#boite{					/* On définit le style des boites à l'intérieur de chaque catégorie et qui contiennent les informations de chaque article */
+	position: relative;
+	margin-top: 250px;
+	margin-left: 750px;
+	width: 30%;
+	height: 500px;
+	border: 5px solid black;
+	background-color: white;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding: 10px;
+	border-radius: 10px;
+
+}
+
+
+#images_def #fleche_gauche_rec{		/* On définit le style de la flèche gauche du défilement d'images */
+	float: left;
+	height: 100%;
+	width: 16%;
+	font-size: 100px;
+	z-index: 5;
+	
+}
+
+#images_def img{
+	display: none;
+}
+
+[name="fleche"] { /* On change les propriétés des fleches*/
+	margin-top: 125%;
+	cursor: pointer;
+	opacity: 1;
+}
+
+[name="fleche_background"]:hover { /* On change les propriétés de l'arrière plan des fleches lorsque l'on passe la souris dessu*/
+	background-color: gray;
+	color: whitesmoke;
+	border-radius: 10px;
+    opacity: .5;
+}
+
+#images_def #fleche_droite_rec{		/* On définit le style de la flèche droite du défilement d'images */
+	float: right;
+	height: 100%;
+	width: 16%;
+	font-size: 100px;
+	z-index: 5;
+}
+
+
+#images_def img.active {		/* On rend visibles les images */
+	display: block;
+	height: 370px;
+	margin-left: auto;
+ 	margin-right: auto;
+	display: block;
+	z-index: 1;
+	animation: fade 0.8s;
+}
+
+@keyframes animate { /* On creer l'animation des images*/
+	from { left: 30%;} 
+	to {left: -100%;}	
+}
+
+
+@keyframes fade { /* On creer l'animation des changements d'image*/
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+	
+}
+
+h1  /* style des balises de titre h1 */
+{
+	text-align: center;
+    color: blue
+/*	background-color: red : */
+}
+
+h2  /* style des balises de titre h2 */
+{
+	text-align: center;
+	font-size: 30px;
+	color: black
+
+}
+p /* style des paragraphes */
+{
+	font-family: Verdana;
+	font-style: italic;
+	
+}
+
+
+
+.joli  /* style des paragraphes */
+{
+	font-family: Verdana;
+	font-style: bold ;
+	color: red ;
+}
+
+
+
+a   /* style des hyperliens */
+{
+	color: #306090;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+a:hover     /* .hover signifie "lorsqu on passe la souris dessus" */
+{
+	color: rgb(43, 41, 41);
+	text-decoration: underline;
+}
+
+
+.informations a:hover { /* On change la couleur des liens lorsqu'on passe dessus*/
+	color: white;
+	text-decoration: underline;
+}
+
+footer{ /* On change les footer*/
+    text-align: center ;
+}
+
+.informations a, .informations li{  /* On change la  couleur de liste et des liens */
+	color: lightgray;
+}
+
+.informations strong{ /* On change la  couleur du gras*/
+	color: white;
+}
+
+.colonne_a_propos dd { /* On change l'espace des balises <dd>*/
+	margin-top: 10px;
+}
+
+#pop_up_cookie p, #pop_up_cookie h1{ /* On change la taille du texte des pop_up */
+	transform: scale(0.65);
+	text-align: center;
+}

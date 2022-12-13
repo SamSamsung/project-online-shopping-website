@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <meta charset="utf-8">
+        <title> Flash Fives.com </title> <!-- On défini le titre affiché en tête-->
+        <link rel="stylesheet" href="./repertoire_style/style.css"> <!-- On importe le document style.css pour  utiliser le css-->
+        <link rel="stylesheet" href="./repertoire_style/dark-theme.css"> <!-- On import le document dark-theme.css pour un theme obscur-->
+        <link rel="icon" type="image/png" href="./repertoire_img/logo_ico.png"> <!-- On importe le logo pour le mettre en image de tête-->
+        <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"></script> <!-- On utilise ce site web pour importer les icones utilisés--> 
+        <script src="./repertoire_style/fonctions.js"></script> <!-- On importe les fonctions javascript-->
+        <script src="./repertoire_style/cookies_dark_theme.js"></script>
+        
+    </head>
+    <body>
+        <!-- On creer l'overlay-->
+        <div id="overlay" class="active"></div>
+        <!-- On creer le pop_up cookie-->
+        <div id="pop_up_cookie" class="active">
+            <!-- On importe l'image-->
+            <img name="cookie_img" src="./repertoire_img/cookie.png" alt="cookie">
+            <h1>Nous utilisons des cookies</h1>
+            <p>Ce site internet utilise des cookies pour vous proposer</p>
+            <p>la meilleure exp&eacute;rience possible sur notre site</p>
+            <a id="lien_cookie" href="./repertoire_pages/page_politique.html">En savoir plus...</a>
+            <button id="bouton_cookie">Accepter</button>
+        </div>
+        <!-- On creer la pop up d'inaction-->
+        <div id="pop_up_ecran">
+            <p>Vous avez &eacute;t&eacute; inactifs pendant plus de 15s.</p>
+            <p>&Ecirc;tes vous toujours la ?</p>
+            <!-- On appelle la fonction pop_up ecran sur le click-->
+            <button id="bouton_ferme" onclick="pop_up_ecran()">Je suis toujours la</button>
+        </div>
+        <!-- On appelle le fichier cookies-->
+        <script src="./repertoire_style/cookies.js"></script>
+        <div id="gif"></div>
+        <!-- On creer la bannière-->
+        <nav class="banner" id="id_banner">
+            <a href="accueil.html"><img class="logo" src="repertoire_img/logo.png"></a>
+            <h1 class="titre_princ">Bienvenue sur <strong><a href="accueil.html">Flash Fives </strong></a>!</h1>
+            <div class="search-box">
+                <input class="search-txt" type="search" placeholder="Recherchez n'importe quel article (EN CONSTRUCTION)">
+                <article class="search-btn">
+                    <i class ="fas fa-search"></i>
+                </a>
+            </div>
+            <a href="repertoire_pages/page_panier.html" class="panier" id="id_4"> 
+                <i class ="fa-solid fa-basket-shopping"></i>  <!-- On appelle les icones-->
+            </a>
+            <a href="repertoire_pages/page_compte.html" class="compte" id="id_5"> 
+                <i class ="fa-solid fa-user"></i> <!-- On appelle les icones-->
+            </a>
+            <!-- On appelle la fonction dark-theme au click-->
+            <button class="bouton" id="butt" onclick="dark_theme()">Dark theme</button> 
+        </nav>
+        <!-- On appelle la class container-->
+        <div class="container" id="id_container">
+            <!-- On creer une boite-->
+            <div class="box" name="1">
+                <a href="repertoire_pages/page_vetements.html"><h1>V&ecirc;tements</h1>   
+                <!-- On appelle l'animation des images-->
+                    <div class="deffilement_img">
+                        <img src="repertoire_img/images_objets/Vetements/vetement1.jpeg" alt="pull-over">
+                        <img src="repertoire_img/images_objets/Vetements/vetement2.jpeg" alt="jeans">
+                        <img src="repertoire_img/images_objets/Vetements/vetement3.jpeg" alt="second-jeans">
+                        <img src="repertoire_img/images_objets/Vetements/vetement4.jpeg" alt="basket">
+                        <img src="repertoire_img/images_objets/Vetements/vetement5.jpeg" alt="second-basket">
+                        <img src="repertoire_img/images_objets/Vetements/vetement6.jpeg" alt="t-shirt">
+                        <img src="repertoire_img/images_objets/Vetements/vetement7.jpeg" alt="dress">
+                        <img src="repertoire_img/images_objets/Vetements/vetement8.jpeg" alt="hat">
+                    </div>
+                </a>
+            </div> 
+            <!-- On creer une boite-->
+            <div class="box">
+                    <a href="repertoire_pages/page_technologie.html"><h1 class="content">Technologie</h1>
+                         <!-- On appelle l'animation des images-->
+                        <div class="deffilement_img">
+                            <img src="repertoire_img/images_objets/Technologie/technologie1.jpeg" alt="drone">
+                            <img src="repertoire_img/images_objets/Technologie/technologie2.jpeg" alt="montre">
+                            <img src="repertoire_img/images_objets/Technologie/technologie3.jpeg" alt="camera">
+                            <img src="repertoire_img/images_objets/Technologie/technologie4.jpeg" alt="ordi_portable">
+                            <img src="repertoire_img/images_objets/Technologie/technologie5.jpeg" alt="iphone">
+                            <img src="repertoire_img/images_objets/Technologie/technologie6.jpeg" alt="ordi">
+                            <img src="repertoire_img/images_objets/Technologie/technologie7.jpeg" alt="casque">
+                            <img src="repertoire_img/images_objets/Technologie/technologie8.jpeg" alt="enceinte">
+                        </div>
+                    </a>
+            </div>
+            <!-- On creer une boite-->
+            <div class="box">
+                    <a href="repertoire_pages/page_sport.html"><h1 class="content">Sport</h1>
+                         <!-- On appelle l'animation des images-->
+                        <div class="deffilement_img">
+                            <img src="repertoire_img/images_objets/Sport/sport1.jpeg" alt="raquette">
+                            <img src="repertoire_img/images_objets/Sport/sport2.jpeg" alt="club_golf">
+                            <img src="repertoire_img/images_objets/Sport/sport3.jpeg" alt="gourde">
+                            <img src="repertoire_img/images_objets/Sport/sport4.jpeg" alt="kayak">
+                            <img src="repertoire_img/images_objets/Sport/sport5.jpeg" alt="sac">
+                            <img src="repertoire_img/images_objets/Sport/sport6.jpeg" alt="poids">
+                            <img src="repertoire_img/images_objets/Sport/sport7.jpeg" alt="ballon_basket">
+                            <img src="repertoire_img/images_objets/Sport/sport8.jpeg" alt="gant_baseball">
+                        </div>
+                    </a>
+            </div>
+            <!-- On creer une boite-->
+            <div class="box">
+                    <a href="repertoire_pages/page_electromenager.html"><h1 class="content">&Eacute;lectrom&eacute;nager</h1>
+                         <!-- On appelle l'animation des images-->
+                        <div class="deffilement_img">
+                            <img src="repertoire_img/images_objets/Electromenager/electromenager1.jpeg" alt="machine_laver">
+                            <img src="repertoire_img/images_objets/Electromenager/electromenager2.jpeg" alt="four_plaque">
+                            <img src="repertoire_img/images_objets/Electromenager/electromenager3.jpeg" alt="mixeur">
+                            <img src="repertoire_img/images_objets/Electromenager/electromenager4.jpeg" alt="frigo">
+                            <img src="repertoire_img/images_objets/Electromenager/electromenager5.jpeg" alt="plaque_cuisson">
+                            <img src="repertoire_img/images_objets/Electromenager/electromenager6.jpeg" alt="machine_caffe">
+                            <img src="repertoire_img/images_objets/Electromenager/electromenager7.jpeg" alt="fer_a_repasser">
+                            <img src="repertoire_img/images_objets/Electromenager/electromenager8.jpeg" alt="four-micro-onde">
+                        </div>
+                    </a>
+            </div>
+            <!-- On creer une boite-->
+            <div class="box">
+                    <a href="repertoire_pages/page_meubles.html"><h1 class="content">Meubles</h1>
+                         <!-- On appelle l'animation des images-->
+                        <div class="deffilement_img">
+                            <img src="repertoire_img/images_objets/Meubles/meubles1.jpeg" alt="canaper">
+                            <img src="repertoire_img/images_objets/Meubles/meubles2.jpeg" alt="lit">
+                            <img src="repertoire_img/images_objets/Meubles/meubles3.jpeg" alt="armoire">
+                            <img src="repertoire_img/images_objets/Meubles/meubles4.jpeg" alt="bibliotheque">
+                            <img src="repertoire_img/images_objets/Meubles/meubles5.jpeg" alt="lampes">
+                            <img src="repertoire_img/images_objets/Meubles/meubles6.jpeg" alt="bureau">
+                            <img src="repertoire_img/images_objets/Meubles/meubles7.jpeg" alt="bureau_gaming">
+                            <img src="repertoire_img/images_objets/Meubles/meubles8.jpeg" alt="buandrie">
+                        </div>
+                    </a>
+            </div>
+            <!-- On creer une boite-->
+            <div id="images_def" class="box"> 
+                <div id="fleche_gauche_rec" name="fleche_background"> <!-- On appelle les icones-->
+                    <i name="fleche" class="fa-solid fa-arrow-left" onclick="slidePrecedente()"></i> <!-- On appelle la fonction slidePrecedente au click-->
+                </div>
+                <div id="fleche_droite_rec" name="fleche_background"> <!-- On appelle les icones-->
+                    <i name="fleche" class="fa-solid fa-arrow-right" onclick="slideSuivante()"></i> <!-- On appelle la fonction slisuivanteau click-->
+                </div>
+                <script src="./repertoire_pages/imports/sources_img.js"></script>
+            </div>
+        </div>
+        <div class="informations"> <!-- On creer le footer-->
+            <dl class="colonne_a_propos"> <!-- On creer la colonne a propos-->
+                <dt><strong>A propos de Flash Fives :</strong></dt>
+                <dd><a href="repertoire_pages/page_politique.html">Politique de confidentialit&eacute;</a></dd>
+                <dd><a href="repertoire_pages/page_contact.html">Contactez-nous</a></dd>
+                <dd><a href="repertoire_pages/page_avis.html">Votre Avis !</a></dd>
+                <dd><a href="repertoire_pages/page_glossaire.html">Page glossaire (en espagnol)</a></dd>
+                <dd><a href="accueil.html">Revenir a l'accueil</a></dd>
+            </dl>
+            <div class="colonne_produits"> <!-- On creer la colonne produits-->
+                <strong>Nos produits :</strong>
+                <ul class="liste">
+                    <li><a href="repertoire_pages/page_vetements.html">Vetements</a></li>
+                    <li><a href="repertoire_pages/page_technologie.html">Technologie</a></li>
+                    <li><a href="repertoire_pages/page_sport.html">Sport</a></li>
+                    <li><a href="repertoire_pages/page_electromenager.html">Electromenager</a></li>
+                    <li><a href="repertoire_pages/page_meubles.html">Meubles</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </body>
+</html>
